@@ -2,23 +2,30 @@
        fonts
 -----------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 /*--------------------------
           body-styles
 -----------------------------*/
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     background-color: white;
-    width: 1440px;
+
+
 }
+
 /*--------------------
     thumbnail styles
 ----------------------*/
+
 .thumbnail-section {
     background-color: #2D25A0;
-    height: 677px;
+    padding-bottom: 86px;
+    width: 100%;
+
 }
+
 .banner {
     display: flex;
     justify-content: space-evenly;
@@ -27,11 +34,13 @@ body {
     padding-right: 150px;
     padding-bottom: 86px;
 }
+
 .banner-title h2 {
     font-weight: bold;
     font-size: 64px;
     color: #FFFFFF;
 }
+
 .live a {
     text-decoration: none;
     color: white;
@@ -40,18 +49,21 @@ body {
     padding: 10px 24px;
     background-color: #E02C6D;
 }
+
 .banner-photo img {
     width: 556.01px;
     height: 438px;
 
 }
+
 /*---------------
-     image hove
+     image hover
 -----------------*/
 .banner-photo:hover {
     transform: scale(0.5);
     transition: transform 1s 0.1s;
 }
+
 /*--------------------
     article styles
 ----------------------*/
@@ -64,9 +76,11 @@ body {
     padding-left: 180px;
     padding-right: 210px;
 }
+
 article {
     box-shadow: 2px 2px 5px gray;
 }
+
 .article-cover img {
     margin-right: 15px;
     margin-left: 15px;
@@ -75,10 +89,12 @@ article {
     width: 300px;
     height: 256px
 }
+
 .heading {
     margin: 15px;
     font-size: 28px;
 }
+
 .description p {
     margin-left: 15px;
     margin-right: 15px;
@@ -86,71 +102,151 @@ article {
     font-size: 16px;
     color: #6C6C6C;
 }
+
 /*-----------------------
     winners-moment-photo-syle
 ---------------------------*/
-.winners-photo
-{
+.winners-photo {
     margin-top: 130px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
-.champ-title
-{
+
+.champ-title {
     font-size: 30px;
-    color:#2D25A0;
+    color: #2D25A0;
 }
-.photos img
-{
+
+.photos img {
     width: 400px;
     height: 256px;
 }
+
 /*-----------------------
     winning-moment-video-style
 ---------------------------*/
-.final-match
-{
+.final-match {
     margin-top: 130px;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     align-items: center;
 }
+
 /*-----------------------------
         footer style
 -------------------------------*/
-.football-footer 
-{
+.football-footer {
     margin-top: 158px;
 }
-.football-cover
- {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.cover-info 
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.cover-img img 
 
-{
+.football-cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-img img {
     width: 483.87px;
     height: 110px;
 }
-.img-icons i
- {
+
+.img-icons i {
     Width: 32px;
     height: 32px;
     padding-left: 10px;
     color: #969BAB;
 }
-.copy-right 
-{
+
+.copy-right {
     font-size: 18px;
+}
+
+/*----------------------
+      media quaries
+ ---------------------*/
+/*---------------------
+        mobile devices
+     pixel-2 411*731(76%)
+---------------------- */
+@media only screen and (max-width:600px) {
+    body {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+
+    }
+
+    .banner {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .banner-title h2 {
+        font-size: 36px;
+
+    }
+
+    .banner-photo img {
+        margin-top: 50px;
+        width: 318px;
+        height: 259.17px;
+        margin-bottom: 61.83px;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0%;
+        margin-top: 47px;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .winners-photo {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .photos img {
+        width: 100%;
+    }
+
+
+    iframe {
+        width: 400px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cover-img img {
+        width: 100%;
+    }
+
+
 }
